@@ -19,8 +19,56 @@
             border-bottom: 5px solid #999;
             background-color: blue;
             color: white;
-
         }
+        .nater{
+            border-top: 3px solid rgb(4, 68, 245) ;
+            border-bottom: 5px solid #999 ;
+            border-style:inset;
+            padding: 15px;
+            margin-bottom: 45px;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(65, 98, 218);
+            background-color: rgb(255, 255, 255);   
+        }
+        form{
+            margin: 0 auto;
+            width: 45%;
+            padding: 50px;
+            background-color: #fff;
+        }
+        label, input, textarea,button{
+            display: block;
+        }
+        #name, #email{
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-color:  rgba(52, 82, 60, 0.198);
+            height: 35px;
+            width: 100%;
+        }
+        #write{
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom:  10px; 
+            
+        }
+        button,#btn{
+            
+            border-radius: 5px ;
+            border-color: rgb(127, 155, 255);
+            width: 100px;
+            margin: 0 auto;
+            height: 30px;
+            color: rgb(23, 19, 146);
+            background-color: rgb(154, 148, 248);
+        }
+        button,#btn:hover{
+            color: rgb(255, 48, 48);
+            background-color: rgb(166, 188, 253);
+        
+        }
+        
     </style>
 </head>
 <body>
@@ -73,14 +121,19 @@
         </table>
     </main>
     
-    <footer>
-        <p>
-        <span><a href="#">Condtion of use</a></span>
-        <span><a href="#">Privacy notice</a></span>
-        <span><a href="#">This Porject Based Ads</a></span>
-       &copy;copywirte,2022-2050 <a href="#">codeforeverybody.com</a>&nbsp;&nbsp;
-    <span><a href="#">Follow For more</a></span></p> 
+    <form action="">
 
-    </footer>
+        <label  for="name"> You Name: </label>
+            <input  required="required" type="text" id="name">
+    
+            <label for="email">Email Address: </label>
+            <input required="required"type="text" id="email"> <br>
+            <label for="write"> You Message: </label>
+            <textarea required="required" name="" id="write" cols="30" rows="10"></textarea>
+    
+            <button type="button" id="btn"> Submit</button>
+    
+        </form>
+        
 </body>
 </html>
